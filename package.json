@@ -18,11 +18,11 @@
   "author": "c3cvld7aag",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/c3cvld7aag/dsh-go-delete-conversation.git"
+    "url": "git+https://github.com/lovesion/dsh-go-delete-conversation.git"
   },
-  "homepage": "https://github.com/c3cvld7aag/dsh-go-delete-conversation#readme",
+  "homepage": "https://github.com/lovesion/dsh-go-delete-conversation#readme",
   "bugs": {
-    "url": "https://github.com/c3cvld7aag/dsh-go-delete-conversation/issues"
+    "url": "https://github.com/lovesion/dsh-go-delete-conversation/issues"
   },
   "keywords": [
     "dsh",

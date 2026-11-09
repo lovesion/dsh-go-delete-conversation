@@ -47,13 +47,23 @@ touch ~/.dsh/dsh-go/plugins/dsh-go-delete-conversation/archive-deletes.on
 
 ## 装（在 dsh-go 的内置终端里执行）
 
-dsh-go 内部跑的就是 `web` 这个 profile，所以装法和 Web 插件一样：
+dsh-go 内部跑的就是 `web` 这个 profile，所以装法和 Web 插件一样。**这个包没有发布到 npm，
+只能从本仓库获取** —— 下面两种方式任选一种。
+
+先用 git 克隆下来，再装本地目录：
 
 ```sh
-dsh plugin --profile web add dsh-go-delete-conversation
+cd ~ && git clone https://github.com/lovesion/dsh-go-delete-conversation.git
+dsh plugin --profile web add ~/dsh-go-delete-conversation
 ```
 
-本地开发时可以直接指向目录：
+或者直接装 GitHub 上的 tarball：
+
+```sh
+dsh plugin --profile web add https://github.com/lovesion/dsh-go-delete-conversation/archive/refs/heads/main.tar.gz
+```
+
+已经在本地改代码调试时，指向工作目录即可：
 
 ```sh
 dsh plugin --profile web add ./dsh-go-delete-conversation
