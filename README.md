@@ -43,7 +43,8 @@ fork=300 / archive=400 / session-id=450，本插件 order=420）。dsh-go 的 Ap
 touch ~/.dsh/dsh-go/plugins/dsh-go-delete-conversation/archive-deletes.on
 ```
 
-（用 npm 装的话，这个目录是 `~/.dsh/profiles/web/node_modules/dsh-go-delete-conversation/`。）
+注意这是 `$DSH_HOME/dsh-go/plugins/` 下的那个目录，**不是装包的位置** ——
+代码只认这里（见 `lib/index.js` 的 `PLUGIN_DIR`），放在 `node_modules` 里不生效。目录不存在就先建出来。
 
 ## 装（在 dsh-go 的内置终端里执行）
 
