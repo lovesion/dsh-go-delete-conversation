@@ -1,0 +1,57 @@
+{
+  "name": "dsh-go-delete-conversation",
+  "version": "0.2.0",
+  "description": "dsh-go 会话删除：在手机 App 的会话长按菜单里加一项「删除会话」，连日志、投影缓存和工作区归属一起清掉。Adds a permanent \"Delete session\" item to the dsh-go session long-press menu.",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": {
+      "default": "./lib/index.js"
+    },
+    "./client": {
+      "default": "./lib/client.js"
+    },
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./package.json": "./package.json"
+  },
+  "license": "MIT",
+  "author": "c3cvld7aag",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/c3cvld7aag/dsh-go-delete-conversation.git"
+  },
+  "homepage": "https://github.com/c3cvld7aag/dsh-go-delete-conversation#readme",
+  "bugs": {
+    "url": "https://github.com/c3cvld7aag/dsh-go-delete-conversation/issues"
+  },
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "dsh-go",
+    "session",
+    "delete"
+  ],
+  "files": [
+    "lib",
+    "cordis.patch.yml",
+    "README.md"
+  ],
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "inject": [
+        "@deepseek-ai/dsh-client-locale"
+      ]
+    }
+  },
+  "engines": {
+    "dsh": ">=0.2.1-rc.2 <0.3.0-0"
+  }
+}

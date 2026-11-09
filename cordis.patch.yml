@@ -1,0 +1,4 @@
+# id: unique; name must equal "name" in package.json.
+- insert:
+    - id: dsh-go-delete-conversation
+      name: dsh-go-delete-conversation
